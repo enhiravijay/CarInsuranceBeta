@@ -1,95 +1,201 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results retried="3" ignored="0" total="5" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-01-18T21:24:14 IST" name="Insurance" finished-at="2022-01-18T21:27:19 IST" duration-ms="185437">
+  <suite started-at="2022-01-20T18:08:16 IST" name="Insurance" finished-at="2022-01-20T18:08:16 IST" duration-ms="204">
     <groups>
     </groups>
-    <test started-at="2022-01-18T21:24:14 IST" name="Car_Insurance" finished-at="2022-01-18T21:27:19 IST" duration-ms="185437">
-      <class name="testCase001.TestCase001">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:testCase001.TestCase001@2d0399f4]" started-at="2022-01-18T21:24:13 IST" name="beforeSuite" finished-at="2022-01-18T21:24:14 IST" duration-ms="383" status="PASS">
+    <test started-at="2022-01-20T18:08:16 IST" name="Car_Insurance" finished-at="2022-01-20T18:08:16 IST" duration-ms="204">
+      <class name="testCase001.RetryTest">
+        <test-method signature="casetwo()[pri:0, instance:testCase001.RetryTest@2ab4bc72]" started-at="2022-01-20T18:08:16 IST" name="casetwo" finished-at="2022-01-20T18:08:16 IST" duration-ms="16" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="abeforeMethod(java.lang.reflect.Method)[pri:0, instance:testCase001.TestCase001@2d0399f4]" started-at="2022-01-18T21:24:14 IST" name="abeforeMethod" finished-at="2022-01-18T21:25:52 IST" duration-ms="97795" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void testCase001.TestCase001.verifyComprehensiveText()]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- casetwo -->
+        <test-method retried="true" signature="retrylogictest()[pri:0, instance:testCase001.RetryTest@2ab4bc72]" started-at="2022-01-20T18:08:16 IST" name="retrylogictest" finished-at="2022-01-20T18:08:16 IST" duration-ms="6" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at testCase001.RetryTest.retrylogictest(RetryTest.java:11)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- abeforeMethod -->
-        <test-method signature="verifyComprehensiveText()[pri:0, instance:testCase001.TestCase001@2d0399f4]" started-at="2022-01-18T21:25:52 IST" name="verifyComprehensiveText" finished-at="2022-01-18T21:25:52 IST" duration-ms="688" status="PASS">
+        </test-method> <!-- retrylogictest -->
+        <test-method retried="true" signature="retrylogictest()[pri:0, instance:testCase001.RetryTest@2ab4bc72]" started-at="2022-01-20T18:08:16 IST" name="retrylogictest" finished-at="2022-01-20T18:08:16 IST" duration-ms="2" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at testCase001.RetryTest.retrylogictest(RetryTest.java:11)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyComprehensiveText -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:testCase001.TestCase001@2d0399f4]" started-at="2022-01-18T21:25:52 IST" name="screenShot" finished-at="2022-01-18T21:25:54 IST" duration-ms="1472" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyComprehensiveText status=SUCCESS method=TestCase001.verifyComprehensiveText()[pri:0, instance:testCase001.TestCase001@2d0399f4] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- retrylogictest -->
+        <test-method retried="true" signature="retrylogictest()[pri:0, instance:testCase001.RetryTest@2ab4bc72]" started-at="2022-01-20T18:08:16 IST" name="retrylogictest" finished-at="2022-01-20T18:08:16 IST" duration-ms="1" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at testCase001.RetryTest.retrylogictest(RetryTest.java:11)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- screenShot -->
-        <test-method is-config="true" signature="abeforeMethod(java.lang.reflect.Method)[pri:0, instance:testCase001.TestCase001@2d0399f4]" started-at="2022-01-18T21:25:54 IST" name="abeforeMethod" finished-at="2022-01-18T21:26:35 IST" duration-ms="41104" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void testCase001.TestCase001.verifyODText() throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- retrylogictest -->
+        <test-method signature="retrylogictest()[pri:0, instance:testCase001.RetryTest@2ab4bc72]" started-at="2022-01-20T18:08:16 IST" name="retrylogictest" finished-at="2022-01-20T18:08:16 IST" duration-ms="4" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at testCase001.RetryTest.retrylogictest(RetryTest.java:11)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- abeforeMethod -->
-        <test-method signature="verifyODText()[pri:0, instance:testCase001.TestCase001@2d0399f4]" started-at="2022-01-18T21:26:35 IST" name="verifyODText" finished-at="2022-01-18T21:26:35 IST" duration-ms="195" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyODText -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:testCase001.TestCase001@2d0399f4]" started-at="2022-01-18T21:26:35 IST" name="screenShot" finished-at="2022-01-18T21:26:36 IST" duration-ms="789" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyODText status=SUCCESS method=TestCase001.verifyODText()[pri:0, instance:testCase001.TestCase001@2d0399f4] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenShot -->
-        <test-method is-config="true" signature="abeforeMethod(java.lang.reflect.Method)[pri:0, instance:testCase001.TestCase001@2d0399f4]" started-at="2022-01-18T21:26:36 IST" name="abeforeMethod" finished-at="2022-01-18T21:27:11 IST" duration-ms="35260" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void testCase001.TestCase001.verifyTPText() throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- abeforeMethod -->
-        <test-method signature="verifyTPText()[pri:0, instance:testCase001.TestCase001@2d0399f4]" started-at="2022-01-18T21:27:11 IST" name="verifyTPText" finished-at="2022-01-18T21:27:16 IST" duration-ms="5275" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTPText -->
-        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:testCase001.TestCase001@2d0399f4]" started-at="2022-01-18T21:27:16 IST" name="screenShot" finished-at="2022-01-18T21:27:19 IST" duration-ms="2762" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyTPText status=SUCCESS method=TestCase001.verifyTPText()[pri:0, instance:testCase001.TestCase001@2d0399f4] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenShot -->
-      </class> <!-- testCase001.TestCase001 -->
+        </test-method> <!-- retrylogictest -->
+      </class> <!-- testCase001.RetryTest -->
     </test> <!-- Car_Insurance -->
   </suite> <!-- Insurance -->
 </testng-results>

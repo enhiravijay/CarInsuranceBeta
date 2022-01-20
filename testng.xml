@@ -3,13 +3,15 @@
 <suite name="Insurance">
 
 	<listeners>
-		<listener class-name="extentReportListener.ExtentReporterNG" />
+			<listener class-name="extentReportListener.ExtentReporterNG" />
+			<listener class-name="utility.MyTransformer" />
+
 	</listeners>
 
 
 	<test name="Car_Insurance">
 		<classes>
-			<class name="testCase001.TestCase001"></class>
+			<class name="testCase001.RetryTest"></class>
 		</classes>
 	</test>
 </suite>

@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Insurance" class="navigator-link">
-              <span class="suite-name border-passed">Insurance</span>
+              <span class="suite-name border-failed">Insurance</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,45 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,  3 skipped,  1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Insurance" class="hide-methods failed suite-Insurance"> (hide)</a> <!-- hide-methods failed suite-Insurance -->
+                      <a href="#" panel-name="suite-Insurance" class="show-methods failed suite-Insurance"> (show)</a> <!-- show-methods failed suite-Insurance -->
+                    </span>
+                    <div class="method-list-content failed suite-Insurance">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Insurance" title="testCase001.RetryTest" class="method navigator-link" hash-for-method="retrylogictest">retrylogictest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Insurance -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Insurance" class="hide-methods skipped suite-Insurance"> (hide)</a> <!-- hide-methods skipped suite-Insurance -->
+                      <a href="#" panel-name="suite-Insurance" class="show-methods skipped suite-Insurance"> (show)</a> <!-- show-methods skipped suite-Insurance -->
+                    </span>
+                    <div class="method-list-content skipped suite-Insurance">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Insurance" title="testCase001.RetryTest" class="method navigator-link" hash-for-method="retrylogictest">retrylogictest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Insurance" title="testCase001.RetryTest" class="method navigator-link" hash-for-method="retrylogictest">retrylogictest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Insurance" title="testCase001.RetryTest" class="method navigator-link" hash-for-method="retrylogictest">retrylogictest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Insurance -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,17 +142,7 @@
                     <div class="method-list-content passed suite-Insurance">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Insurance" title="testCase001.TestCase001" class="method navigator-link" hash-for-method="verifyComprehensiveText">verifyComprehensiveText</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Insurance" title="testCase001.TestCase001" class="method navigator-link" hash-for-method="verifyODText">verifyODText</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Insurance" title="testCase001.TestCase001" class="method navigator-link" hash-for-method="verifyTPText">verifyTPText</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Insurance" title="testCase001.RetryTest" class="method navigator-link" hash-for-method="casetwo">casetwo</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Insurance -->
@@ -129,31 +157,81 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Insurance" class="panel Insurance">
-          <div class="suite-Insurance-class-passed">
+          <div class="suite-Insurance-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testCase001.TestCase001</span>
+              <img src="failed.png"/>
+              <span class="class-name">testCase001.RetryTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyComprehensiveText">
-                  </a> <!-- verifyComprehensiveText -->
-                  <span class="method-name">verifyComprehensiveText</span>
+                  <a name="retrylogictest">
+                  </a> <!-- retrylogictest -->
+                  <span class="method-name">retrylogictest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at testCase001.RetryTest.retrylogictest(RetryTest.java:11)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Insurance-class-failed -->
+          <div class="suite-Insurance-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testCase001.RetryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="retrylogictest">
+                  </a> <!-- retrylogictest -->
+                  <span class="method-name">retrylogictest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at testCase001.RetryTest.retrylogictest(RetryTest.java:11)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyODText">
-                  </a> <!-- verifyODText -->
-                  <span class="method-name">verifyODText</span>
+                  <a name="retrylogictest">
+                  </a> <!-- retrylogictest -->
+                  <span class="method-name">retrylogictest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at testCase001.RetryTest.retrylogictest(RetryTest.java:11)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyTPText">
-                  </a> <!-- verifyTPText -->
-                  <span class="method-name">verifyTPText</span>
+                  <a name="retrylogictest">
+                  </a> <!-- retrylogictest -->
+                  <span class="method-name">retrylogictest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at testCase001.RetryTest.retrylogictest(RetryTest.java:11)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Insurance-class-skipped -->
+          <div class="suite-Insurance-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCase001.RetryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="casetwo">
+                  </a> <!-- casetwo -->
+                  <span class="method-name">casetwo</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -170,10 +248,11 @@
 &lt;suite name=&quot;Insurance&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;extentReportListener.ExtentReporterNG&quot;/&gt;
+    &lt;listener class-name=&quot;utility.MyTransformer&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Car_Insurance&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testCase001.TestCase001&quot;/&gt;
+      &lt;class name=&quot;testCase001.RetryTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Car_Insurance --&gt;
 &lt;/suite&gt; &lt;!-- Insurance --&gt;
@@ -213,24 +292,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyTPText')
-data.setCell(0, 2, 'testCase001.TestCase001')
-data.setCell(0, 3, 5275);
+data.setCell(0, 1, 'casetwo')
+data.setCell(0, 2, 'testCase001.RetryTest')
+data.setCell(0, 3, 16);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyComprehensiveText')
-data.setCell(1, 2, 'testCase001.TestCase001')
-data.setCell(1, 3, 688);
+data.setCell(1, 1, 'retrylogictest')
+data.setCell(1, 2, 'testCase001.RetryTest')
+data.setCell(1, 3, 6);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyODText')
-data.setCell(2, 2, 'testCase001.TestCase001')
-data.setCell(2, 3, 195);
+data.setCell(2, 1, 'retrylogictest')
+data.setCell(2, 2, 'testCase001.RetryTest')
+data.setCell(2, 3, 4);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'retrylogictest')
+data.setCell(3, 2, 'testCase001.RetryTest')
+data.setCell(3, 3, 2);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'retrylogictest')
+data.setCell(4, 2, 'testCase001.RetryTest')
+data.setCell(4, 3, 1);
 window.suiteTableData['Insurance']= { tableData: data, tableDiv: 'times-div-Insurance'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 29 ms</span>
               <div id="times-div-Insurance">
               </div> <!-- times-div-Insurance -->
             </div> <!-- times-div -->
@@ -256,47 +343,29 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testCase001.TestCase001</div> <!-- chronological-class-name -->
-              <div class="configuration-suite before">
-                <span class="method-name">beforeSuite</span>
+              <div class="chronological-class-name">testCase001.RetryTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">casetwo</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-suite before -->
-              <div class="configuration-method before">
-                <span class="method-name">abeforeMethod(public void testCase001.TestCase001.verifyComprehensiveText())</span>
-                <span class="method-start">442 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyComprehensiveText</span>
-                <span class="method-start">98239 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">screenShot([TestResult name=verifyComprehensiveText status=SUCCESS method=TestCase001.verifyComprehensiveText()...)</span>
-                <span class="method-start">98945 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">abeforeMethod(public void testCase001.TestCase001.verifyODText() throws java.lang.Exception)</span>
-                <span class="method-start">100418 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyODText</span>
-                <span class="method-start">141522 ms</span>
+                <span class="method-name">retrylogictest</span>
+                <span class="method-start">24 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">screenShot([TestResult name=verifyODText status=SUCCESS method=TestCase001.verifyODText()[pri:0, instance:testC...)</span>
-                <span class="method-start">141719 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">abeforeMethod(public void testCase001.TestCase001.verifyTPText() throws java.lang.Exception)</span>
-                <span class="method-start">142509 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyTPText</span>
-                <span class="method-start">177769 ms</span>
+                <span class="method-name">retrylogictest</span>
+                <span class="method-start">44 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">screenShot([TestResult name=verifyTPText status=SUCCESS method=TestCase001.verifyTPText()[pri:0, instance:testC...)</span>
-                <span class="method-start">183049 ms</span>
-              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">retrylogictest</span>
+                <span class="method-start">62 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">retrylogictest</span>
+                <span class="method-start">74 ms</span>
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
