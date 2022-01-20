@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-01-18T21:24:14 IST" name="Insurance" finished-at="2022-01-18T21:27:19 IST" duration-ms="185437">
+    <groups>
+    </groups>
+    <test started-at="2022-01-18T21:24:14 IST" name="Car_Insurance" finished-at="2022-01-18T21:27:19 IST" duration-ms="185437">
+      <class name="testCase001.TestCase001">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:testCase001.TestCase001@2d0399f4]" started-at="2022-01-18T21:24:13 IST" name="beforeSuite" finished-at="2022-01-18T21:24:14 IST" duration-ms="383" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="abeforeMethod(java.lang.reflect.Method)[pri:0, instance:testCase001.TestCase001@2d0399f4]" started-at="2022-01-18T21:24:14 IST" name="abeforeMethod" finished-at="2022-01-18T21:25:52 IST" duration-ms="97795" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCase001.TestCase001.verifyComprehensiveText()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- abeforeMethod -->
+        <test-method signature="verifyComprehensiveText()[pri:0, instance:testCase001.TestCase001@2d0399f4]" started-at="2022-01-18T21:25:52 IST" name="verifyComprehensiveText" finished-at="2022-01-18T21:25:52 IST" duration-ms="688" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyComprehensiveText -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:testCase001.TestCase001@2d0399f4]" started-at="2022-01-18T21:25:52 IST" name="screenShot" finished-at="2022-01-18T21:25:54 IST" duration-ms="1472" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyComprehensiveText status=SUCCESS method=TestCase001.verifyComprehensiveText()[pri:0, instance:testCase001.TestCase001@2d0399f4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method is-config="true" signature="abeforeMethod(java.lang.reflect.Method)[pri:0, instance:testCase001.TestCase001@2d0399f4]" started-at="2022-01-18T21:25:54 IST" name="abeforeMethod" finished-at="2022-01-18T21:26:35 IST" duration-ms="41104" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCase001.TestCase001.verifyODText() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- abeforeMethod -->
+        <test-method signature="verifyODText()[pri:0, instance:testCase001.TestCase001@2d0399f4]" started-at="2022-01-18T21:26:35 IST" name="verifyODText" finished-at="2022-01-18T21:26:35 IST" duration-ms="195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyODText -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:testCase001.TestCase001@2d0399f4]" started-at="2022-01-18T21:26:35 IST" name="screenShot" finished-at="2022-01-18T21:26:36 IST" duration-ms="789" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyODText status=SUCCESS method=TestCase001.verifyODText()[pri:0, instance:testCase001.TestCase001@2d0399f4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method is-config="true" signature="abeforeMethod(java.lang.reflect.Method)[pri:0, instance:testCase001.TestCase001@2d0399f4]" started-at="2022-01-18T21:26:36 IST" name="abeforeMethod" finished-at="2022-01-18T21:27:11 IST" duration-ms="35260" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testCase001.TestCase001.verifyTPText() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- abeforeMethod -->
+        <test-method signature="verifyTPText()[pri:0, instance:testCase001.TestCase001@2d0399f4]" started-at="2022-01-18T21:27:11 IST" name="verifyTPText" finished-at="2022-01-18T21:27:16 IST" duration-ms="5275" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTPText -->
+        <test-method is-config="true" signature="screenShot(org.testng.ITestResult)[pri:0, instance:testCase001.TestCase001@2d0399f4]" started-at="2022-01-18T21:27:16 IST" name="screenShot" finished-at="2022-01-18T21:27:19 IST" duration-ms="2762" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTPText status=SUCCESS method=TestCase001.verifyTPText()[pri:0, instance:testCase001.TestCase001@2d0399f4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+      </class> <!-- testCase001.TestCase001 -->
+    </test> <!-- Car_Insurance -->
+  </suite> <!-- Insurance -->
+</testng-results>
