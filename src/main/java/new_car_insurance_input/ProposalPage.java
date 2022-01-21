@@ -46,7 +46,6 @@ public class ProposalPage extends BasePage {
 	
 	public ProposalPage(WebDriver driver) {
 		super();
-		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 	

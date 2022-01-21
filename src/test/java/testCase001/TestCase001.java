@@ -4,17 +4,13 @@ import java.io.File;
 import java.lang.reflect.Method;
 import java.text.SimpleDateFormat;
 import java.util.GregorianCalendar;
-import java.util.Properties;
-
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
@@ -62,7 +58,7 @@ public class TestCase001 extends BasePage {
 	public void abeforeMethod(Method method) throws Exception {
 		openBrowser();
 		login = new Login();
-		login.checkLogin();
+		login.checkLogin(prop.getProperty("UserName1"),prop.getProperty("Password1"));
 		// prop = getprop();
 		 test = extent.startTest((this.getClass().getSimpleName() + " :: " + method.getName()),method.getName());
 		 test.assignAuthor("Vijay Chetgiri");

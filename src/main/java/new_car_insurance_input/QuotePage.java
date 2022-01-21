@@ -48,7 +48,6 @@ public class QuotePage extends BasePage{
 	//get Variant //span[@id='Variant']
 	public QuotePage(WebDriver driver) {
 		super();
-		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 
@@ -97,10 +96,10 @@ public class QuotePage extends BasePage{
 		int insurerSize = insurer.size();
 		// Idv details
 		List<WebElement> idvEle = Idv.findElements(By.xpath("//li[@class='LiClass']/div[@class='boxLeft resultPrice pad-lft dynamic']/h5"));
-		int idvSize = idvEle.size();
+		//int idvSize = idvEle.size();
 		// Insurance premium details
 		List<WebElement> premEle = Premium.findElements(By.xpath("//div[@class='boxLeft pad-rht dynamic']/a/span"));
-		int premiumSize = premEle.size();
+		//int premiumSize = premEle.size();
 
 		Integer crnvalue = getCrn();
 		String crnvalis = crnvalue.toString();
@@ -161,7 +160,7 @@ public class QuotePage extends BasePage{
 		List<WebElement> premEle = Premium.findElements(By.xpath("//div[@class='boxLeft pad-rht dynamic']/a/span"));
 		int premiumSize = premEle.size();
 		for(int i = 0;i<premiumSize;i++) {
-			String premiumtxt = premEle.get(i).getText();
+			//String premiumtxt = premEle.get(i).getText();
 			//System.out.println("Premium is Rs "+ premiumtxt.replaceAll("[^a-zA-Z0-9]", ""));
 		}
 
@@ -198,7 +197,7 @@ public class QuotePage extends BasePage{
 	public boolean ifInsurerPresent() throws Exception {
 		boolean insurerpresent = false;
 		Map<Integer, Map<Integer, List<String>>> abc = getQuoteDetails();
-		int abcsize = abc.size();
+		//int abcsize = abc.size();
 		for(Integer insdetails : abc.keySet()) {
 			Map<Integer, List<String>> qmapvalue = abc.get(insdetails);
 			List<String> qstringvalue = qmapvalue.get(insdetails);
@@ -224,7 +223,7 @@ public class QuotePage extends BasePage{
 			List<WebElement> buyIns = driver.findElements(By.xpath("//div[@class='boxLeft pad-rht dynamic']/a"));
 			for (int i = 0;i<liCount;i++) {
 				List<WebElement> insurer = Insurers.findElements(By.xpath("//div[@class='boxLeft img2 pad-lft']/img[@sname]"));
-				int insurerSize = insurer.size();
+				//int insurerSize = insurer.size();
 				String instext = insurer.get(i).getAttribute("alt");
 				System.out.println("Insurer to be bought is "+ instext);
 				if(instext.contains(ExcelUtils.getMapData("IsInsurerPresent"))) {

@@ -3,18 +3,14 @@ package new_car_insurance_input;
 import static org.testng.Assert.assertTrue;
 
 import java.util.List;
-import java.util.Properties;
-
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import basePage.BasePage;
-import utility.Config;
 import utility.ExcelUtils;
 import utility.Log;
 
@@ -368,7 +364,7 @@ public class New_car_input_page extends BasePage {
 	}
 
 	private void selectMonth(WebElement monthEle,String monthValue) throws Exception {
-		String mon;
+		//String mon;
 
 		System.out.println("selecting month ");
 		System.out.println("month to be selected"+ExcelUtils.getMapData("SelectRegMonth"));

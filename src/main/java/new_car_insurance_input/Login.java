@@ -1,15 +1,11 @@
 package new_car_insurance_input;
 
-import java.util.Properties;
-
-import org.openqa.selenium.WebDriver;
+//import java.util.Properties;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
 import basePage.BasePage;
-//import testBase.TestBase;
-import utility.Config;
+import io.qameta.allure.Step;
 import utility.ExcelUtils;
 
 public class Login extends BasePage {
@@ -32,6 +28,10 @@ public class Login extends BasePage {
 	
 	@FindBy(xpath = "//span[@class='ad_quote']")
 	WebElement btnAddQuote;
+	
+	@FindBy(xpath = "//div/span[@class='txtwhite']")
+	WebElement loginName;
+	//head/title
 	
 	//input[@id='username']
 	//input[@id='password']
@@ -59,7 +59,14 @@ public class Login extends BasePage {
 		}
 	}
 	
-	public  void checkLogin() throws Exception {
+	@Step("getting login name")
+	public String verifyLoginSuccess() throws Exception {
+		String lName = loginName.getText();
+		return lName;
+	}
+	
+	@Step("Login with user: {0} and Password {1} step...")
+	public  void checkLogin(String Uname,String Pswd) throws Exception {
 		System.out.println("sssttttaaarrrttt");
 		prop=utility.Config.loadPropertyFile();
 		//driver.get(Config.prop.getProperty("liveurl"));
@@ -71,8 +78,8 @@ public class Login extends BasePage {
 			LoginButton.click();
 			UserName.click();
 			UserName.clear();
-			UserName.sendKeys("110646");
-			Password.sendKeys("110646");
+			UserName.sendKeys(Uname);
+			Password.sendKeys(Pswd);
 			Submit.click();
 			isElementDisplayed(CarEle);
 			CarEle.click();

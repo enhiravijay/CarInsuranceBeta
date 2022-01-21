@@ -3,14 +3,12 @@ package testCase001;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.relevantcodes.extentreports.LogStatus;
+//import com.relevantcodes.extentreports.LogStatus;
 
 import basePage.BasePage;
 import new_car_insurance_input.New_car_input_page;
-import testBase.TestBase;
 
 public class NewTest extends BasePage{
 	

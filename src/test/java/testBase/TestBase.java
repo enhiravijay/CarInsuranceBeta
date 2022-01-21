@@ -19,20 +19,22 @@ public class TestBase {
 	
 	
 
-	public WebDriver openBrowser() throws Exception {
+	public WebDriver openBrowser(String String, String UserName, String Password) throws Exception {
 		System.setProperty("webdriver.chrome.driver", "src\\test\\resources\\drivers\\chromedriver.exe");
+		prop=utility.Config.loadPropertyFile();
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		login=new Login();
-		login.checkLogin();
+		
+		login.checkLogin(prop.getProperty("UserName1"),prop.getProperty("Password1"));
 		return driver;
 	}
 	
 	
 
 	public Properties getprop() throws Exception {
-		Config con = new Config();
+		//Config con = new Config();
 		prop = Config.loadPropertyFile();
 		return prop;
 

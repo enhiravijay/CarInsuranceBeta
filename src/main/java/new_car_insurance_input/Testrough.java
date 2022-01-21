@@ -232,7 +232,7 @@ public class Testrough {
 		List<WebElement> autoOptions = driver.findElements(By.xpath("//ul[@id='ui-id-1']/li[@class='ui-menu-item']"));
 		//wait.until(ExpectedConditions.visibilityOf(autoOptions));
 		//List<WebElement> opList = autoOptions.findElements(By.xpath("//li[@class='ui-menu-item']"));
-		WebElement ele = driver.findElement(By.xpath("//li[@class='ui-menu-item'][contains(text(),'BAJAJ AUTO FINANCE LTD')]"));
+		//WebElement ele = driver.findElement(By.xpath("//li[@class='ui-menu-item'][contains(text(),'BAJAJ AUTO FINANCE LTD')]"));
 		//WebDriverWait wait =  new WebDriverWait(driver, 30);
 //		wait.until(ExpectedConditions.visibilityOf(ele));
 		int opSize = autoOptions.size();

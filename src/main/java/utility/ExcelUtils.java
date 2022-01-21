@@ -34,7 +34,7 @@ public class ExcelUtils {
 		FileInputStream ExcelFile = new FileInputStream(path);
 		ExcelWBook = new HSSFWorkbook(ExcelFile);
 		ExcelWSheet = ExcelWBook.getSheetAt(0);
-		int lastRow = ExcelWSheet.getLastRowNum();
+		//int lastRow = ExcelWSheet.getLastRowNum();
 		Map<String, Map<String, String>> excelFileMap = new HashMap<String, Map<String, String>>();
 		Map<String, String> dataMap = new HashMap<String, String>();
 
@@ -69,9 +69,9 @@ public class ExcelUtils {
 		int rowCount = ExcelWSheet.getLastRowNum() - ExcelWSheet.getFirstRowNum();
 		// int rowCount = 18;
 		// Get the first row from the sheet
-		HSSFRow row = ExcelWSheet.getRow(0);
+		//HSSFRow row = ExcelWSheet.getRow(0);
 		// Create a new row and append it at last of sheet
-		HSSFRow newRow = ExcelWSheet.createRow(rowCount + 1);
+		//HSSFRow newRow = ExcelWSheet.createRow(rowCount + 1);
 		// Create a loop over the cell of newly created Row
 		int qmapsize = qmap.size();
 		// ExcelWSheet.shiftRows(18, 30,-1);
